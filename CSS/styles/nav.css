@@ -1,0 +1,34 @@
+nav{
+    padding: 10px 20px; 
+    /*El padding es la distancia con 
+    respecto al borde de la cajita
+    
+    Para modificarlo son 4 lugares
+    El primero modifica las 12pm
+    El segundo modifica las 3pm
+    El tercero modifica las 6pm
+    El cuarto modifica las 9pm
+
+    Si pone 2, serian 
+    El primero modifica las 12pm
+    El segundo modifica las 6pm
+
+    La forma larga pero especifica es:
+    padding-top:10px
+    padding-left: 20px
+    padding-rigth: 10px
+    padding-bottom: 10px
+
+    */
+    display: flex;
+    /*Eje principal*/
+    justify-content: space-between;
+    /*Eje secundario*/
+    align-items: center;
+}
+nav > div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
