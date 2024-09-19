@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!--Decirle a Google que es html-->
+<html lang="en"> <!--lenguaje de la pagina web-->
+<head> <!-- Titulo de la pagina e informacion no visual-->
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Barra de navegacion o menu-->
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="./intro.html">Introduccion a Html</a>
+    </nav>
+
+    <!--Cabecera o seccion superior-->
+    <header>
+    </header>
+
+    <!--Contenido Principal de la pagina-->
+    <main>
+        <!--Formulario--> <!--Required es que se exija para enviar-->
+        <form action=""> 
+            <!--Etiqueta para formulario-->
+            <label for="name">Name</label> 
+            <!--Tipo de datos en esta situacion es texto-->
+            <!--El placeholder es para las letras grises y se borran al escribir encima-->
+            <input type="text" name="name" required placeholder="Name"> 
+            <!--Fecha de nacimiento-->
+            <label for="birthday">Birthday</label> 
+            <!--Que se escriba fecha o un calendario dropdown-->
+            <input type="date" name="birthday" required> 
+            <!--Entrada de correo-->
+            <label for="email">Email</label> 
+            <input type="email" name="email" required placeholder="user@company.com"> <!--Que necesite el @-->
+            <!--Agregar Paises con dropdown-->
+            <label for="country">Country</label> 
+            <select name="country" id="">
+                <!--El default muestra ese texto antes de seleccionar-->
+                <option value="" default>Select your country</option>
+                <option value="arguentina">Argentina</option>
+                <option value="mexico">Mexico</option>
+                <option value="venezuela">Venezuela</option>
+            </select>
+            <label for="password">Password</label> <!--Contrasena-->
+            <input type="password" name="password" required>
+            <input type="submit" value="Send">
+        </form>
+    </main>
+
+    <!--div>div*6>h2+p-->
+    <!--Significa crear 6 divs y dentro de cada div h2 y p--> 
+
+    <!--Sectiones de la pagina-->
+    <!--section>#inicio>div*2>h2+p-->
+    <!--Significa crear 2 secciones y dentro de ellas un titulo y un parrafo-->
+    <section>
+        <div id="Inicio">
+            <div>
+                <h2></h2>
+                <p></p>
+            </div>
+            <div>
+                <h2></h2>
+                <p></p>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!--Contenido Lateral de la pagina-->
+    <aside>
+    </aside>
+
+    <!--Pie de pagina-->
+    <footer>
+    </footer>
+
+</body>
+</html>
