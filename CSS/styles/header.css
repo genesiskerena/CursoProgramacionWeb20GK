@@ -1,0 +1,29 @@
+header{
+    /*Crea sistemas de filas o columnas
+    Ex. 4 filas de golpe o 5 columnas de golpe*/
+    display: grid;
+    /*Para indicar cuantas columas quiero y su tamano*/
+    grid-template-columns: 1fr 1fr; /*Se podria tambien Ex. 25% 25%  50%*/
+    padding: 20px;
+
+}
+header>div>img{
+width:50%
+}
+
+.leftdiv{
+    display: flex; /*Crea una fila*/
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.rightdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftdiv > h1 {
+    font-size: 42px;
+}

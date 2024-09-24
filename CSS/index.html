@@ -7,25 +7,46 @@
     <!--HTML linked o conectandolo al CSS-->
     <link rel="stylesheet" href="./styles/general.css">
     <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/header.css">
     <!--CSS IN BLOCK-->
     <style>
         p{
             color: white;
         }
     </style>
+    <!--Tipografia Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!--CSS in line-->
     <nav style="background-color: rgb(55, 117, 117);">
         <div>
-            <p>Logo</p>
+            <p class="logohover">LOGO</p>
         </div>
     <div>
-        <p>HOME</p>
-        <p>PRODUCTS</p>
-        <p>FAQ</p>
-        <button>CONTACT ME</button>
+        <p class="hover">HOME</p>
+        <p class="hover">PRODUCTS</p>
+        <p class="hover">FAQ</p>
+        <button id="contact">CONTACT</button>
     </div>
     </nav>
+    <main>
+       <header>
+            <div class="leftdiv">
+                <h1>Photobooth Rental</h1>
+                <h2>Capturing Luxury Moments for Every Occasion</h2>  
+                <h2>Do you want more info?</h2>    
+                <div>
+                    <input type="email" name="email" placeholder="email@company.com">
+                    <button>Send me your packages</button>
+                </div>
+            </div>
+            <div class="rightdiv">
+                <img src="./Images/Couple in photobooth.png" alt="Photobooth prints">
+            </div>
+       </header>
+    </main>
 </body>
 </html>

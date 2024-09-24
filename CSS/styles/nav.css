@@ -1,3 +1,10 @@
+/*Crear Variable para no repetir pasos
+ Que nombre sea relacionado*/
+:root{
+    --brandingcolor1:rgb(55, 117, 117);
+    --brandingcolor2:white;
+}
+
 nav{
     padding: 10px 20px; 
     /*El padding es la distancia con 
@@ -30,7 +37,55 @@ nav > div {
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 30px;
+    font-size: 25px;
+}
+/*Como ponerle efecto o estilo a pseudoclase a todo el DIV o elementos
+    nav>div>p:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}*/
+/*Hacer efecto o estili a solo los elementos que tienen esta class*/
+.hover:hover {
+    border-bottom: 3px solid white;
+    cursor: pointer;
+    /*Transicion para hacerlo el cambio del hover mas smooth*/
+    
+}
+.logohover:hover {
+    cursor: pointer;
+}
+
+#contact{
+    background-color: var(--brandingcolor2);
+    /*Asi se llama a la variable para que se aplique donde se necesite*/
+    color: var(--brandingcolor1); 
+    font-weight: 550;
     font-size: 20px;
+    /*border: 20px solid black;*/
+    /*border: ex dotted, dashed */
+    border: none;
+    border-radius: 6px 0px 6px 0px;
+}
+
+/*PSEUDO CLASES
+Son los estados o status en que actua un elemento Ex:
+:active (Cuando se le da click)
+:focus (Cuando se selecciona)
+:hover (Cuando pasa por encima el mouse)
+:visited (Cuando ya se visitó o se le dió click)
+:link (Cuando no se ha visitado o dado click)
+:first-child (Primer hijo que es el primer p'arrafo)
+:last-child (Ultimo hijo que es el ultimo p'arrafo)
+*/
+#contact:hover {
+    background-color: var(--brandingcolor1); 
+    /*TIP:Ctrl + D y selecciona la siguiente palabra que es igual*/
+    color: var(--brandingcolor2);
+    font-weight: 400;
+    font-size: 22px;
+    border-bottom: 3px solid var(--brandingcolor2);
+    border-right: 5px solid var(--brandingcolor1);
+    transition: .2s;
+    cursor: pointer;
 }
