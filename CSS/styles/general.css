@@ -9,7 +9,8 @@
       font-optical-sizing: auto;
       font-weight: 300;
       font-style: normal;
+    }
 
-      
-      
+    body {
+        height: 200vh; /*Views por height*/
     }
