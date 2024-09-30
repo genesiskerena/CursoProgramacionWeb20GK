@@ -34,7 +34,7 @@ nav{
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 5000;
+    z-index: 1000;
 }
 nav > div {
     display: flex;
