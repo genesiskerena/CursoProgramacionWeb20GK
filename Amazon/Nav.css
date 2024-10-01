@@ -92,7 +92,8 @@ nav >div> i{
 
 #categorias> p:hover {
     cursor: pointer;
-    border: 1px solid white;
+    outline: 1px solid white;
+    padding: 5px;
 
 }
 
