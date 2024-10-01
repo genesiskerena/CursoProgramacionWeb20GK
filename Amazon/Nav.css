@@ -1,263 +1,258 @@
-Nav{
-    padding:  10px 15px 10px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #131A22;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    gap: 12px;
+Nav {
+  padding: 10px 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131a22;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  gap: 12px;
 }
 
-#location{
-    display: flex;
-    align-items: flex-start;
-    gap: 5px;
-    font-size: 12px;
+#location {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  font-size: 12px;
 }
-nav >div> i{
-    font-size: 20px;
-}
-
-
-#todaslascategorias{
-    padding: 10px;
-    border-radius: 4px 0px 0px 4px;
-    color: gray;
-    border: none;
-    width: 160px;
-}
-#todaslascategorias:hover{
-    background-color: rgb(220, 220, 220);
+nav > div > i {
+  font-size: 20px;
 }
 
-#searchbar{
-    padding: 10px;
-    width: 800px;
-    border: none;
+#todaslascategorias {
+  padding: 10px;
+  border-radius: 4px 0px 0px 4px;
+  color: gray;
+  border: none;
+  width: 160px;
+}
+#todaslascategorias:hover {
+  background-color: rgb(220, 220, 220);
 }
 
-#lupa{
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 0px 4px 4px 0px;
-    background-color: #fcbc68;
-    border: none;
+#searchbar {
+  padding: 10px;
+  width: 800px;
+  border: none;
+}
+
+#lupa {
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 0px 4px 4px 0px;
+  background-color: #fcbc68;
+  border: none;
 }
 
 #lupa:hover {
-    background-color: #f7a73e;
+  background-color: #f7a73e;
 }
 
-#busqueda{
-    display: flex;
-    justify-content: center;
+#busqueda {
+  display: flex;
+  justify-content: center;
 }
 
 .hover:hover {
-    margin: 10;
-    padding: 7px;
-    outline: 1px solid rgb(255, 255, 255);
-    cursor: pointer;
+  margin: 10;
+  padding: 7px;
+  outline: 1px solid rgb(255, 255, 255);
+  cursor: pointer;
 }
 
 #logohover:hover {
-    border: white;
-    cursor: pointer;
+  border: white;
+  cursor: pointer;
 }
 
-.searchhover{
-    cursor: pointer;
-    color: black; /*No cambias*/
+.searchhover {
+  cursor: pointer;
+  color: black; /*No cambias*/
 }
 
-#rightdiv{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    font-size: 12px;
-    gap: 30px;
+#rightdiv {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 12px;
+  gap: 30px;
 }
 
-#categorias{
-    padding: 10px 20px 10px 20px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #232f3e;
-    color: white;
-    font-size: 13px;
+#categorias {
+  padding: 10px 20px 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #232f3e;
+  color: white;
+  font-size: 13px;
 }
 
-#categorias> p:hover {
-    cursor: pointer;
-    border: 1px solid white;
-
+#categorias > p:hover {
+  cursor: pointer;
+  border: 1px solid white;
 }
 
-
-#cart{
-    font-size: 20px;
-    padding: 10px;
+#cart {
+  font-size: 20px;
+  padding: 10px;
 }
 
-main{
-    display: flex;
-    justify-content: center;
+main {
+  display: flex;
+  justify-content: center;
 }
 
-main img:hover{
-    cursor: pointer;
+main img:hover {
+  cursor: pointer;
 }
 main img {
-    display: block;
-    margin: 0;
-    padding: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #E3E6E6;
+body {
+  background-color: #e3e6e6;
 }
 
 #ofertas {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0px;
-    background-image: linear-gradient(0deg, #E3E6E6,#E3E6E6,#E3E6E6, #FF6201);
-    width: 1400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  background-image: linear-gradient(0deg, #e3e6e6, #e3e6e6, #e3e6e6, #ff6201);
+  width: 1400px;
 }
 
-#ofertascontainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+#ofertascontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body>div>div>div:hover{
-    cursor: pointer;
+body > div > div > div:hover {
+  cursor: pointer;
 }
 
-body> div > div> div{
-    display: grid;
-    justify-content: space-between;
-    background-color: white;
-    width: 280px;
-    margin: 20px;
-    padding: 15px 0px 20px 30px;
+body > div > div > div {
+  display: grid;
+  justify-content: space-between;
+  background-color: white;
+  width: 280px;
+  margin: 20px;
+  padding: 15px 0px 20px 30px;
 }
 
-body > div > div >div >h1 {
-    font-size: 21px;
-    font-weight: 700;
+body > div > div > div > h1 {
+  font-size: 21px;
+  font-weight: 700;
 }
 
-body > div > div >div >h2 {
-    font-size: 13px;
-    font-weight: 200;
-    color: #007185;
+body > div > div > div > h2 {
+  font-size: 13px;
+  font-weight: 200;
+  color: #007185;
 }
 
-body > div > div >div >h2:hover{
-    color: #FF6201;
+body > div > div > div > h2:hover {
+  color: #ff6201;
 }
 
-#divpagos{
-    background-color: white;
-    width: 1360px;
-    margin: 0 auto;
+#divpagos {
+  background-color: white;
+  width: 1360px;
+  margin: 0 auto;
 }
 
-#divpagos img{
-    width: calc(1360px/6);
-    display: flex;
+#divpagos img {
+  width: calc(1360px / 6);
+  display: flex;
 }
 
-#divpagos img:hover{
-    cursor: pointer;
+#divpagos img:hover {
+  cursor: pointer;
 }
 
-#paymentmethods{
-display: flex;
-justify-content: space-between;
+#paymentmethods {
+  display: flex;
+  justify-content: space-between;
 }
 
-#divpagos > h2{
-    font-size: 21px;
-    font-weight: 700;
-    padding: 30px;
-    padding-bottom: 0;
+#divpagos > h2 {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 30px;
+  padding-bottom: 0;
 }
 
-#divpagos > p{
-    font-size: 13px;
-    color: #007185;
-    padding: 30px 0px 30px 30px;
-    padding-top: 10px;
+#divpagos > p {
+  font-size: 13px;
+  color: #007185;
+  padding: 30px 0px 30px 30px;
+  padding-top: 10px;
 }
 
-#divpagos>p:hover{
-    color: #FF6201;
-    cursor: pointer;
+#divpagos > p:hover {
+  color: #ff6201;
+  cursor: pointer;
 }
 
-#homefooter{
-    display: flex;
-    justify-content: center;
-    background-color: #37475A;
-    color: white;
-    padding: 15px 0;
-    margin: 20px 0px 0px;
+#homefooter {
+  display: flex;
+  justify-content: center;
+  background-color: #37475a;
+  color: white;
+  padding: 15px 0;
+  margin: 20px 0px 0px;
 }
 
-#homefooter:hover{
-    background-color: #405269;
-    cursor: pointer;
+#homefooter:hover {
+  background-color: #405269;
+  cursor: pointer;
 }
 
-#navfooter{
-    display: flex;
-    justify-content: center;
-    padding: 40px 80px 40px 80px;
-    background-color: #232f3e;
-    color: white;
-    gap: 40px;
+#navfooter {
+  display: flex;
+  justify-content: center;
+  padding: 40px 80px 40px 80px;
+  background-color: #232f3e;
+  color: white;
+  gap: 40px;
 }
 
-footer>div>div>p{
-    font-size: 18px;
-    font-weight: 700;
+footer > div > div > p {
+  font-size: 18px;
+  font-weight: 700;
 }
 
-footer> div>div>ul{
-    padding: 0;
-    margin: 15px 0px 0px 0px;
-    font-weight: 100;
-    
+footer > div > div > ul {
+  padding: 0;
+  margin: 15px 0px 0px 0px;
+  font-weight: 100;
 }
-footer> div>div>ul:hover{
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-#bottomlogos{
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    background-color:#232f3e;
-    padding: 30px;
-    border-top: 1px #37475A solid;
-}
-#bottomlogos:hover{
-    cursor: pointer;
+footer > div > div > ul:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
-#finalfooter{
-    display: flex;
-    justify-content: center;
-    background-color: #131A22;
-    color: lightgray;
-    font-size: 12px;
-    padding: 30px;
+#bottomlogos {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background-color: #232f3e;
+  padding: 30px;
+  border-top: 1px #37475a solid;
+}
+#bottomlogos:hover {
+  cursor: pointer;
+}
+
+#finalfooter {
+  display: flex;
+  justify-content: center;
+  background-color: #131a22;
+  color: lightgray;
+  font-size: 12px;
+  padding: 30px;
 }
