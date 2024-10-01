@@ -26,6 +26,7 @@ nav >div> i{
     border-radius: 4px 0px 0px 4px;
     color: gray;
     border: none;
+    width: 160px;
 }
 #todaslascategorias:hover{
     background-color: rgb(220, 220, 220);
@@ -33,7 +34,7 @@ nav >div> i{
 
 #searchbar{
     padding: 10px;
-    width: 800px;
+    width: 900px;
     border: none;
 }
 
