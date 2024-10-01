@@ -14,7 +14,7 @@ Nav{
     display: flex;
     align-items: flex-start;
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
 }
 nav >div> i{
     font-size: 20px;
@@ -33,7 +33,7 @@ nav >div> i{
 
 #searchbar{
     padding: 10px;
-    width: 1500px;
+    width: 800px;
     border: none;
 }
 
@@ -75,6 +75,7 @@ nav >div> i{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    font-size: 12px;
     gap: 30px;
 }
 
