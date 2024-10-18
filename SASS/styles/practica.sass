@@ -1,0 +1,32 @@
+@mixin display( $display, $justify, $align, $columns, $direction)
+  display: $display
+  @if $display == grid
+    grid-template-columns: $columns
+  @if $display == flex 
+    justify-content: $justify
+    align-items: $align
+    flex-direction: $direction
+  @else 
+    
+/*
+  Utiliza el mixin para creear:
+  - Un grid con 4 columnas
+  - Una fila verticalmente centrada y horizontalmente a la derecha
+  - Una fila verticalmente en el fondo y horizontalmente a la izquierda
+  - Una columna verticalmente abajo y horizontalmente centrada
+  
+/*  
+  .selector
+    @include display( $display:center , $justify:center , $align:center , $columns:repat(4,1fr) )
+    
+  .selector
+    @include display (flex, flex-end, center, null)
+
+  .selector
+    @include display (flex, end, end, null)
+
+  .selector
+    @include display (flex, flex-end, center, null, row )
+
+
+    

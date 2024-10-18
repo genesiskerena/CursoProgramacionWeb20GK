@@ -1,0 +1,15 @@
+/* Utiliza el mixin para creear:
+ * - Un grid con 4 columnas
+ * - Una fila verticalmente centrada y horizontalmente a la derecha
+ * - Una fila verticalmente en el fondo y horizontalmente a la izquierda
+ * - Una columna verticalmente abajo y horizontalmente centrada */
+/* .selector
+ *  @include display( $display:center , $justify:center , $align:center , $columns:repat(4,1fr) )
+ * .selector
+ *  @include display (flex, flex-end, center, null)
+ *
+ * .selector
+ *  @include display (flex, end, end, null)
+ *
+ * .selector
+ *  @include display (flex, flex-end, center, null, row ) *//*# sourceMappingURL=practica.css.map */
