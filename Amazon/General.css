@@ -1,9 +1,8 @@
-*{
-    /*Margin es distancia entre elementos*/
-    margin: 0; 
-
-      font-family:"arial";
-      font-optical-sizing: auto;
-      font-weight: 100;
-      font-style: normal;
-    }
+* {
+  /*Margin es distancia entre elementos*/
+  margin: 0;
+  font-family: "arial";
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
