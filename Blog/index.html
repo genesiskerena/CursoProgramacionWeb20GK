@@ -1,281 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GK Portafolio</title>
-    <script src="https://cdn.tailwindcss.com"></script> <!--Calling Tailwind classes-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Calling Tailwind classes-->
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!--Calling Animate Css animations-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> <!--Calling Icons-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!--Calling AOS Animations-->
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Calling Animate Css animations-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!--Calling Icons-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!--Calling AOS Animations-->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); /*Importing Font*/
-        body {
-            font-family: 'Poppins', sans-serif;
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"); /*Importing Font*/
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+      @keyframes marquee {
+        /*Calling Marquee animation from Tailwind*/
+        -15% {
+          transform: translateX(100%);
         }
-        @keyframes marquee {   /*Calling Marquee animation from Tailwind*/
-            -15% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
+        100% {
+          transform: translateX(-100%);
         }
-        .marquee {
-            animation: marquee 35s linear infinite;
-        }
+      }
+      .marquee {
+        animation: marquee 35s linear infinite;
+      }
     </style>
-</head>
-<body class="h-screen">
-
+  </head>
+  <body class="bg-black">
     <!-- Background covering full page -->
-    <div class="h-full bg-cover bg-left relative" style="background-image: url('Imagenes/GenesisHome.png');">
-        
-    <!-- Transparent Nav Bar -->
-    <nav class="absolute top-0 left-0 w-full flex justify-between items-center px-6 py-4 bg-transparent">
-           <div class="text-white font-bold text-2xl">
-              <a href="#">Renha Designs</a>
-         </div>
-          <div>
-             <ul class="flex space-x-6 text-white font-semibold">
-                  <li><a href="#about" class="hover:text-amber-400">About</a></li>
-                  <li><a href="#mywork" class="hover:text-amber-400">My Work</a></li>
-                 <li><a href="#contactme" class="hover:text-amber-400">Contact</a></li>
-             </ul>
-          </div>
-       </nav>
-
-        <!-- Header -->
-        <div class="h-full grid grid-cols-1 md:grid-cols-2 items-center">
-            <header class="absolute right-0 top-2/3 md:static md:col-span-2 md:col-start-2 md:translate-y-4 px-8 text-left">
-                <h1 class="animate__animated animate__fadeIn animate__slow text-4xl md:text-7xl font-bold text-white">Elegant.</h1>
-                <h1 class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-4xl md:text-7xl font-bold text-white">Bold.</h1>
-                <h1 class="animate__animated animate__fadeIn animate__slow animate__delay-2s text-4xl md:text-7xl font-bold text-white">Minimal<strong class="text-amber-400">.</strong></h1>
-                <p class="animate__animated animate__fadeInUp animate__slow animate__delay-2s text-xl md:text-2xl text-white mt-4">Creating Timeless Beauty. Unforgettable Designs.</p>
-            </header>
+    <div>
+      <!-- Transparent Nav Bar -->
+      <nav
+        class="w-full flex justify-between items-center px-6 py-4 bg-transparent"
+      >
+        <div class="text-white font-bold text-2xl">
+          <a href="#">Renha Designs</a>
         </div>
-
+        <div>
+          <ul class="flex space-x-6 text-white font-semibold">
+            <li><a href="#about" class="hover:text-amber-400">About</a></li>
+            <li><a href="#mywork" class="hover:text-amber-400">My Work</a></li>
+            <li>
+              <a href="#contactme" class="hover:text-amber-400">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Header -->
+      <div class="min-h-[80vh] grid grid-cols-1 md:grid-cols-2 items-center">
+        <div>
+          <img src="./Imagenes/GenesisMain.jpeg" alt="">
+        </div>
+        <header
+          class="absolute right-0 top-2/3 md:static md:col-span-2 md:col-start-2 md:translate-y-4 px-8 text-left"
+        >
+          <h1
+            class="animate__animated animate__fadeIn animate__slow text-4xl md:text-7xl font-bold text-white"
+          >
+            Elegant.
+          </h1>
+          <h1
+            class="animate__animated animate__fadeIn animate__slow animate__delay-1s text-4xl md:text-7xl font-bold text-white"
+          >
+            Bold.
+          </h1>
+          <h1
+            class="animate__animated animate__fadeIn animate__slow animate__delay-2s text-4xl md:text-7xl font-bold text-white"
+          >
+            Minimal<strong class="text-amber-400">.</strong>
+          </h1>
+          <p
+            class="animate__animated animate__fadeInUp animate__slow animate__delay-2s text-xl md:text-2xl text-white mt-4"
+          >
+            Creating Timeless Beauty. Unforgettable Designs.
+          </p>
+        </header>
+      </div>
     </div>
     <!-- About Me -->
-    <section  id="about" class="bg-black text-white p-8 py-20">
-        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            <!-- Left Column: Who I Am -->
-            <div 
-               data-aos="fade-up" data-aos-duration="1500">
-                <h1 class="text-6xl font-bold mb-6">About Me.</h1>
-                   <p class="text-base">
-                       Hi, I’m <strong class="text-amber-400">Renha</strong> (which means 'Beauty,' by the way!). I speak English & Spanish.<br> I’m a passionate <strong class="text-red-500">Creative Digital Designer</strong> who loves blending beautiful aesthetics with smart, functional design. I believe that sometimes <strong> less is more,</strong> but I also know when to break the rules to create something <strong class="text-amber-400"> bold and unforgettable.</strong>
-                       </p>
-                   <p class="text-base mt-2">
-                      Design, to me, is more than just pretty visuals.<br>
-                      It’s about<strong class="italic"> Transforming ideas into visuals, Designing and Creating meaningful interactions.</strong> My work spans a wide range, from sleek corporate designs and local small businesses to personal projects and even faith-based initiatives.
-                      Whether it’s a sleek website, a clever branding concept, or a quirky project, my goal is always the same: <strong class="text-amber-400">make it Simple, make it Stunning, and make it Timeless.</strong>
-                  </p>
-                  <ul class="text-base mt-2"> When I step away from my creative projects, you’ll find me:
-                    <li>•	Spending time with family 👨‍👩‍👧‍👦</li>
-                     <li>•	Trying new foods 🍜</li>
-                     <li>•	Playing the piano 🎹</li>
-                   <li>• Exploring new hobbies 🎨</li>
-                      <li>•	Sending funny TikToks to my friends 📱</li>
-                  </ul>
-                  <p class="text-base mt-2">
-                   I’m all about elegant, bold, minimal design that leaves an impression. If you’re looking for someone who will listen, collaborate, and create something unique with you, I’m your person.
-                     Let’s make something amazing together.
-                  </p>
-                  <a href="#contactme">
-                  <button class="bg-white text-black font-semibold mt-5 py-2 px-4 border rounded hover:bg-amber-400 hover:text-white transition border-none duration-300"> Contact me
-                   </button>
-                  </a>
-               </div>
-
-                <!-- Right Column: GenesisAbout -->
-                <div class="flex justify-center"
-                data-aos="fade-up"
-                data-aos-duration="1500">
-                    <img class="rounded-lg w-auto h-auto px-12" src="Imagenes/GenesisAbout.png" alt="About Me Image">
-                </div>
-            </div>
-        </section>
-
-    <!-- Inifinite Marquee-->
-     <div class="overflow-hidden bg-black">
-          <div class="flex marquee space-x-10 text-white text-xl font-bold whitespace-nowrap">
-                    <span>Photo Booth Templates</span>
-                    <span>Branding</span>
-                    <span>Web Design</span>
-                    <span>Social Media Content</span>
-                    <span>Print Design</span>
-                    <span>Video Editing</span>
-                    <span>Digital Profile Cards</span>
-                    <span>Print Design</span>
-                    <span>Digital Invitations</span>
-                    <span>Photo Booth Templates</span>
-                    <span>Branding</span>
-                    <span>Web Design</span>
-                    <span>Social Media Content</span>
-                    <span>Print Design</span>
-                    <span>Video Editing</span>
-                    <span>Digital Profile Cards</span>
-                    <span>Print Design</span>
-                    <span>Digital Invitations</span>
-         </div>
-
-      <!-- Portafolio -->
-      <main id="mywork" class="container mx-auto mt-0 px-4 bg-black py-10"
-            data-aos="fade-up"
-            data-aos-duration="2000">
-        <h1 class="text-6xl text-white font-bold mt-0 mb-8">Some of my Work.</h1>
-            
-        <!-- Portafolio Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8"
-             data-aos="fade-up"
-             data-aos-duration="1000">
-
-            <!-- Proyect 1 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/MESAFLYER.png" alt="flyermockup">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Print Design</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Print-ready designs for flyers, banners, business cards, brochures, invitations and photo booth templates for print or digital use.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
-
-            <!-- Proyect 2 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/CanvaSites.png" alt="profilecard">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Digital Profile Cards</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Mini websites showcasing business or professional personas with key links, custom domains, and optional Tap keychains.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
-
-            <!-- Proyect 3 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/socialmediacontent.png" alt="SocialMediaContent">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Social Media Content</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Cohesive Designs. Posts, stories, carousels, and reels across platforms like Facebook, Instagram, TikTok, and LinkedIn.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
-            <!-- Proyect 4 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/DMK-moodboard.png" alt="moodboard">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Branding Design</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Beyond logos. We craft identities—your brand’s personality, tone, colors, typography, and perfect harmony.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
-            <!-- Proyect 5 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/proposaldesign.png" alt="Proposal Design">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Proposal Design for RFP's</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Transforming text into branded, polished presentations for RFP submissions, highlighting key information with style.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
-            <!-- Proyect 6 -->
-            <article class="bg-white rounded-lg overflow-hidden">
-                <img class="w-full h-48 object-cover" src="Imagenes/digitalinvitation.png" alt="Digital Invitation">
-                <div class="p-6">
-                    <h2 class="text-2xl font-semibold text-black">Digital Invitations</h2>
-                    <p class="text-gray-600 mt-2 mb-4">Interactive mini-sites customized with event themes, live countdown timer, maps, gift registries, and RSVP features.</p>
-                    <a href="#" class="text-amber-600 hover:underline">View more</a>
-                </div>
-            </article>
+    <section id="about" class="bg-black text-white p-8 py-20">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Left Column: Who I Am -->
+        <div data-aos="fade-up" data-aos-duration="1500">
+          <h1 class="text-6xl font-bold mb-6">About Me.</h1>
+          <p class="text-base">
+            Hi, I’m <strong class="text-amber-400">Renha</strong> (which means
+            'Beauty,' by the way!). I speak English & Spanish.<br />
+            I’m a passionate
+            <strong class="text-red-500">Creative Digital Designer</strong> who
+            loves blending beautiful aesthetics with smart, functional design. I
+            believe that sometimes <strong> less is more,</strong> but I also
+            know when to break the rules to create something
+            <strong class="text-amber-400"> bold and unforgettable.</strong>
+          </p>
+          <p class="text-base mt-2">
+            Design, to me, is more than just pretty visuals.<br />
+            It’s about<strong class="italic">
+              Transforming ideas into visuals, Designing and Creating meaningful
+              interactions.</strong
+            >
+            My work spans a wide range, from sleek corporate designs and local
+            small businesses to personal projects and even faith-based
+            initiatives. Whether it’s a sleek website, a clever branding
+            concept, or a quirky project, my goal is always the same:
+            <strong class="text-amber-400"
+              >make it Simple, make it Stunning, and make it Timeless.</strong
+            >
+          </p>
+          <ul class="text-base mt-2">
+            When I step away from my creative projects, you’ll find me:
+            <li>• Spending time with family 👨‍👩‍👧‍👦</li>
+            <li>• Trying new foods 🍜</li>
+            <li>• Playing the piano 🎹</li>
+            <li>• Exploring new hobbies 🎨</li>
+            <li>• Sending funny TikToks to my friends 📱</li>
+          </ul>
+          <p class="text-base mt-2">
+            I’m all about elegant, bold, minimal design that leaves an
+            impression. If you’re looking for someone who will listen,
+            collaborate, and create something unique with you, I’m your person.
+            Let’s make something amazing together.
+          </p>
+          <a href="#contactme">
+            <button
+              class="bg-white text-black font-semibold mt-5 py-2 px-4 border rounded hover:bg-amber-400 hover:text-white transition border-none duration-300"
+            >
+              Contact me
+            </button>
+          </a>
         </div>
+        <!-- Right Column: GenesisAbout -->
+        <div
+          class="flex justify-center"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
+          <img
+            class="rounded-lg w-auto h-auto px-12"
+            src="Imagenes/GenesisAbout.png"
+            alt="About Me Image"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Inifinite Marquee-->
+    <div class="overflow-hidden bg-black">
+      <div
+        class="flex marquee space-x-10 text-white text-xl font-bold whitespace-nowrap"
+      >
+        <span>Photo Booth Templates</span>
+        <span>Branding</span>
+        <span>Web Design</span>
+        <span>Social Media Content</span>
+        <span>Print Design</span>
+        <span>Video Editing</span>
+        <span>Digital Profile Cards</span>
+        <span>Print Design</span>
+        <span>Digital Invitations</span>
+        <span>Photo Booth Templates</span>
+        <span>Branding</span>
+        <span>Web Design</span>
+        <span>Social Media Content</span>
+        <span>Print Design</span>
+        <span>Video Editing</span>
+        <span>Digital Profile Cards</span>
+        <span>Print Design</span>
+        <span>Digital Invitations</span>
+      </div>
+    </div>
+    <!-- Portafolio -->
+    <main
+      id="mywork"
+      class="bg-black px-8"
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
+      <h1 class="text-6xl text-white font-bold mt-0 mb-8">Some of my Work.</h1>
+      <!-- Portafolio Grid -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-3 gap-8"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <!-- Proyect 1 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/MESAFLYER.png"
+            alt="flyermockup"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">Print Design</h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Print-ready designs for flyers, banners, business cards,
+              brochures, invitations and photo booth templates for print or
+              digital use.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+        <!-- Proyect 2 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/CanvaSites.png"
+            alt="profilecard"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">
+              Digital Profile Cards
+            </h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Mini websites showcasing business or professional personas with
+              key links, custom domains, and optional Tap keychains.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+        <!-- Proyect 3 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/socialmediacontent.png"
+            alt="SocialMediaContent"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">
+              Social Media Content
+            </h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Cohesive Designs. Posts, stories, carousels, and reels across
+              platforms like Facebook, Instagram, TikTok, and LinkedIn.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+        <!-- Proyect 4 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/DMK-moodboard.png"
+            alt="moodboard"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">Branding Design</h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Beyond logos. We craft identities—your brand’s personality, tone,
+              colors, typography, and perfect harmony.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+        <!-- Proyect 5 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/proposaldesign.png"
+            alt="Proposal Design"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">
+              Proposal Design for RFP's
+            </h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Transforming text into branded, polished presentations for RFP
+              submissions, highlighting key information with style.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+        <!-- Proyect 6 -->
+        <article class="bg-white rounded-lg overflow-hidden">
+          <img
+            class="w-full h-48 object-cover"
+            src="Imagenes/digitalinvitation.png"
+            alt="Digital Invitation"
+          />
+          <div class="p-6">
+            <h2 class="text-2xl font-semibold text-black">
+              Digital Invitations
+            </h2>
+            <p class="text-gray-600 mt-2 mb-4">
+              Interactive mini-sites customized with event themes, live
+              countdown timer, maps, gift registries, and RSVP features.
+            </p>
+            <a href="#" class="text-amber-600 hover:underline">View more</a>
+          </div>
+        </article>
+      </div>
     </main>
     <!-- Contact Me Form -->
-<section id="contactme" class="bg-black px-6 py-12 text-white"
-        data-aos="flip-up"
-        data-aos-duration="1500">
-    <div class="container mx-auto max-w-lg">
-      <!-- Título del Formulario -->
-      <h2 class="mb-8 text-center text-6xl font-bold">Contact Me.</h2>
-  
-      <!-- Formulario -->
-      <form class="space-y-4">
-        <!-- Campo Nombre -->
-        <div>
-          <label for="name" class="mb-2 block font-bold">Name</label>
-          <input type="text" id="name" placeholder="Enter your name" class="w-full rounded border text-black px-4 py-2" required />
-        </div>
-  
-        <!-- Campo Email -->
-        <div>
-          <label for="email" class="mb-2 block font-bold">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" class="w-full rounded border text-black px-4 py-2" required />
-        </div>
-  
-        <!-- Campo Service Required -->
-        <div>
-          <label for="service" class="mb-2 block font-bold">Service Required</label>
-          <select id="service" class="w-full rounded border text-black px-4 py-2" required>
-            <option value="" disabled selected>Select a service</option>
-            <option value="web-design">Web Design</option>
-            <option value="digital-design">Digital Design</option>
-            <option value="print-design">print Design</option>
-            <option value="branding">Branding</option>
-            <option value="video-edition">Video Editing</option>
-            <option value="smc">Social Media Content</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-  
-         <div>
-          <label for="description" class="mb-2 block font-bold">Tell me more:</label>
-          <input type="text" id="description" placeholder="Please describe the project" class="w-full rounded border text-black px-4 py-6" required />
-        </div>
-        <!-- Campo Idioma -->
-        <div>
-          <label for="language" class="mb-2 block font-bold">Language Preference<label>
-          <select id="language" class="w-full rounded border text-black px-4 py-2" required>
-            <option value="english">English</option>
-            <option value="spanish">Español</option>
-          </select>
-        </div>
-  
-        <!-- Botón Enviar -->
-        <div class="text-center">
-          <button type="submit" class="rounded bg-white px-6 py-2 font-semibold text-black transition duration-300 hover:bg-amber-400 hover:text-white">Submit</button>
-        </div>
-      </form>
-    </div>
-  </section>
-
+    <section
+      id="contactme"
+      class="bg-black px-6 py-12 text-white"
+    >
+      <div class="container mx-auto max-w-lg">
+        <!-- Título del Formulario -->
+        <h2 class="mb-8 text-center text-6xl font-bold">Contact Me.</h2>
+        <!-- Formulario -->
+        <form class="space-y-4">
+          <!-- Campo Nombre -->
+          <div>
+            <label for="name" class="mb-2 block font-bold">Name</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="w-full rounded border text-black px-4 py-2"
+              required
+            />
+          </div>
+          <!-- Campo Email -->
+          <div>
+            <label for="email" class="mb-2 block font-bold">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="w-full rounded border text-black px-4 py-2"
+              required
+            />
+          </div>
+          <!-- Campo Service Required -->
+          <div>
+            <label for="service" class="mb-2 block font-bold"
+              >Service Required</label
+            >
+            <select
+              id="service"
+              class="w-full rounded border text-black px-4 py-2"
+              required
+            >
+              <option value="" disabled selected>Select a service</option>
+              <option value="web-design">Web Design</option>
+              <option value="digital-design">Digital Design</option>
+              <option value="print-design">print Design</option>
+              <option value="branding">Branding</option>
+              <option value="video-edition">Video Editing</option>
+              <option value="smc">Social Media Content</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div>
+            <label for="description" class="mb-2 block font-bold"
+              >Tell me more:</label
+            >
+            <input
+              type="text"
+              id="description"
+              placeholder="Please describe the project"
+              class="w-full rounded border text-black px-4 py-6"
+              required
+            />
+          </div>
+          <!-- Campo Idioma -->
+          <div>
+            <label for="language" class="mb-2 block font-bold"
+              >Language Preference</label
+            >
+            <select
+              id="language"
+              class="w-full rounded border text-black px-4 py-2"
+              required
+            >
+              <option value="english">English</option>
+              <option value="spanish">Español</option>
+            </select>
+          </div>
+          <!-- Botón Enviar -->
+          <div class="text-center">
+            <button
+              type="submit"
+              class="rounded bg-white px-6 py-2 font-semibold text-black transition duration-300 hover:bg-amber-400 hover:text-white"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
     <!-- Footer -->
     <footer class="bg-black py-6 mt-10">
-        <div class="container mx-auto text-center text-white">
-            <p>© 2024 Renha Designs - All rights reserved</p>
-            <div class="flex justify-center space-x-6 my-4">
-      <!-- Instagram Icon -->
-      <a href="https://instagram.com" class="text-white transition hover:text-amber-400">
-        <i class="fab fa-instagram text-2xl"></i>
-      </a>
-
-      <!-- LinkedIn Icon -->
-      <a href="https://linkedin.com" class="text-white transition hover:text-amber-400">
-        <i class="fab fa-linkedin text-2xl"></i>
-      </a>
-
-      <!-- TikTok Icon -->
-      <a href="https://tiktok.com" class="text-white transition hover:text-amber-400">
-        <i class="fab fa-tiktok text-2xl"></i>
-      </a>
-
-      <!-- Back to Home Icon -->
-      <a href="" class="text-white transition hover:text-amber-400">
-        <i class="fa-solid fa-circle-up text-2xl"></i>
-      </a>
-    </div>
+      <div class="container mx-auto text-center text-white">
+        <p>© 2024 Renha Designs - All rights reserved</p>
+        <div class="flex justify-center space-x-6 my-4">
+          <!-- Instagram Icon -->
+          <a
+            href="https://instagram.com"
+            class="text-white transition hover:text-amber-400"
+          >
+            <i class="fab fa-instagram text-2xl"></i>
+          </a>
+          <!-- LinkedIn Icon -->
+          <a
+            href="https://linkedin.com"
+            class="text-white transition hover:text-amber-400"
+          >
+            <i class="fab fa-linkedin text-2xl"></i>
+          </a>
+          <!-- TikTok Icon -->
+          <a
+            href="https://tiktok.com"
+            class="text-white transition hover:text-amber-400"
+          >
+            <i class="fab fa-tiktok text-2xl"></i>
+          </a>
+          <!-- Back to Home Icon -->
+          <a href="" class="text-white transition hover:text-amber-400">
+            <i class="fa-solid fa-circle-up text-2xl"></i>
+          </a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!--Must be in html document for AOS animations to work. Can be located after body-->
-    <script>  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!--Must be in html document for AOS animations to work. Can be located after body-->
+  <script>
     AOS.init();
-    </script>
+  </script>
 </html>
